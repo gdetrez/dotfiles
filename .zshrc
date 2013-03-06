@@ -51,7 +51,12 @@ alias mail='emacs -f mu4e'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git fabric virtualenvwrapper taskwarrior yum django vagrant)
+#plugins=(git fabric virtualenvwrapper taskwarrior yum django vagrant pass)
+plugins=(git fabric taskwarrior yum django vagrant pass)
+
+if (( $+commands[virtualenvwrapper_lazy.sh] )) ; then
+  plugins+=(virtualenvwrapper)
+fi
 
 source $ZSH/oh-my-zsh.sh
 
