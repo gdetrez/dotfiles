@@ -21,3 +21,5 @@ diff = auto
 status = auto
 [core]
 	excludesfile = /home/gregoire/.gitignore_global
+[push]
+	default = matching
