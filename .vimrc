@@ -30,3 +30,6 @@ nnoremap l k
 nnoremap k j
 nnoremap j h
 
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
