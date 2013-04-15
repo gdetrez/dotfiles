@@ -64,7 +64,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH=~/bin/:~/.cabal/bin/:$PATH
 export EDITOR=vim
 alias tempdir='cd `mktemp -d --tmpdir "$USER-\`date "+%d.%H%M"\`-XXXXXX"`'
-alias dotfiles='git --git-dir ~/.dotfiles'
+# alias dotfiles='git --git-dir ~/.dotfiles'
+alias dotfiles='git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME/.dotfiles'
 
 # Oh-my-zsh defines a 'gf' which hides the gf binary.
 unalias gf
