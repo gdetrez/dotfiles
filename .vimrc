@@ -30,6 +30,11 @@ nnoremap l k
 nnoremap k j
 nnoremap j h
 
+" --- Trailing whitespace managements ----------------------------------------
+"  This highlight trailing whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+
+" this is a custom command to remove all trailing whitespaces
+command SpaceJanitor execute '%s/\s\+$//e'
 
