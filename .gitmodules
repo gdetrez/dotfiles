@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/vim-puppet"]
 	path = .vim/bundle/vim-puppet
 	url = https://github.com/rodjek/vim-puppet.git
+[submodule ".vim/bundle/greplace.vim"]
+	path = .vim/bundle/greplace.vim
+	url = https://github.com/vim-scripts/greplace.vim.git
