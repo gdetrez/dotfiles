@@ -63,4 +63,3 @@ let g:gitgutter_highlight_lines = 1
 
 " this is a custom command to remove all trailing whitespaces
 command SpaceJanitor execute '%s/\s\+$//e'
-
