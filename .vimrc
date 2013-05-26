@@ -32,10 +32,15 @@ set term=xterm-256color
 
 " python from powerline.ext.vim import source_plugin; source_plugin()
 
+" ~~~ Keyboard shortcuts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 nnoremap s l
 nnoremap l k
 nnoremap k j
 nnoremap j h
+" Enable pastetoggle with F2
+set pastetoggle=<F2>
+nnoremap ; :
+
 
 " --- Trailing whitespace managements ----------------------------------------
 "  This highlight trailing whitespaces
@@ -59,7 +64,7 @@ highlight SignColumn ctermbg=8
 " Change sign for modified line
 let g:gitgutter_sign_modified = "±"
 let g:gitgutter_signs = 1
-let g:gitgutter_highlight_lines = 1
+let g:gitgutter_highlight_lines = 0
 
 " this is a custom command to remove all trailing whitespaces
 command SpaceJanitor execute '%s/\s\+$//e'
